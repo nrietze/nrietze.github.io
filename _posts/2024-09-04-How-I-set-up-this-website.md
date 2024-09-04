@@ -30,6 +30,9 @@ title:  "How I navigated the forking jungle to set up this website!"
 - next, I ran `bundle exec jekyll serve` to build the website locally
 
 
+# Deploy the website from git bash
+- after merging the most recent changes to the `deploy` branch, make sure to be on the `deploy`branch using `git checkout deploy`.
+- run `bin/deploy --user`
 
 # Resources for Jekyll websites
 ## Posts
