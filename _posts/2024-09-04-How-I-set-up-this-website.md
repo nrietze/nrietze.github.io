@@ -1,6 +1,18 @@
 ---
 layout: post
 title:  "How I navigated the forking jungle to set up this website!"
+
+header:
+  image: /assets/images/ojos_de_salado.jpg
+  caption: "Photo credit: [**Sentinel 2**](https://apps.sentinel-hub.com/eo-browser/)"
+
+categories:
+  - Setup
+  - Uncategorized
+tags:
+  - ruby
+  - fork
+  - github
 ---
 
 # Welcome
