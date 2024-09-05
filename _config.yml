@@ -12,7 +12,7 @@ locale                   : "en-US"
 title                    : "Nils Rietze"
 
 header:
-  overlay_image: assets/utah_hills.jpg
+  image: assets/utah_hills.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [**Sentinel 2**](https://apps.sentinel-hub.com/eo-browser/)"
   actions:
