@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title:  "How I navigated the forking jungle to set up this website!"
 
 header:
