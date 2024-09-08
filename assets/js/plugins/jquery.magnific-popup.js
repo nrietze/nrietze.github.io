@@ -108,15 +108,23 @@
       var s = document.createElement('p').style, // 's' for style. better to create an element if body yet to exist
         v = ['ms','O','Moz','Webkit']; // 'v' for vendor
 
-      if( s['transition'] !== undefined ) {
-        return true;
-      }
+      // uncomment block below to use modernizr 
+      // if( s['transition'] !== undefined ) {
+      //   return true;
+      // }
 
-      while( v.length ) {
-        if( v.pop() + 'Transition' in s ) {
-          return true;
-        }
-      }
+      // while( v.length ) {
+      //   if( v.pop() + 'Transition' in s ) {
+      //     return true;
+      //   }
+      // }
+
+      // suggested solution acc. to https://stackoverflow.com/questions/7264899/detect-css-transitions-using-javascript-and-without-modernizr
+      if( s['transition'] == '' ) return true; // check first for prefeixed-free support
+      while( v.length ) // now go over the list of vendor prefixes and check support until one is found
+          if( v.pop() + 'Transition' in s )
+              return true;
+      return false;
 
       return false;
     };

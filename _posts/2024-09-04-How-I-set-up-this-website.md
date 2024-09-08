@@ -1,9 +1,11 @@
 ---
 layout: posts
 title:  "How I navigated the forking jungle to set up this website!"
+date: 2024-09-04
 
 header:
-  image: /assets/images/ojos_de_salado.jpg
+  image: /assets/images/ojos_de_salado_dunes_square.jpg
+  teaser: /assets/images/ojos_de_salado_square.jpg
   caption: "Photo credit: [**Sentinel 2**](https://apps.sentinel-hub.com/eo-browser/)"
 
 categories:
