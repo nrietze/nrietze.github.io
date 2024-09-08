@@ -24,7 +24,7 @@ header:
 # see: https://mmistakes.github.io/minimal-mistakes/docs/layouts/#author-profile
 author:
   name             : "Nils Rietze"
-  avatar           : "assets/images/worldview_aoi2.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/me_pixelated.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD student in Earth System Science at the University of Zurich."
   location         : "Zurich, Switzerland"
   email            :

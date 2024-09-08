@@ -14,12 +14,26 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
-<b>Hi, I'm Nils.</b>
-<br>
-<img align="left" 
+<!-- Profile picture as round avatar -->
+<!-- <div class="author__avatar_large">
+  <a href="{{ author.home | default: '/' | absolute_url }}">
+    <img class="u-photo" align="left" 
          src="assets/images/me_pixelated.jpg" 
-         alt="">
+         alt="" itemprop="image">
+  </a>
+</div> -->
 
-I'm a PhD student in Earth System Sciences in the <a href="https://www.ieu.uzh.ch/en/research/ecology/spatial.html">Spatial Ecology and Remote Sensing Group</a> at the University of Zurich studying the effect of heatwaves, droughts, and wildfires on Arctic tundra ecosystems. 
+<!-- profile picture as square -->
+<figure style="width: 150px" class="align-left">
+  <img src="assets/images/me_pixelated.jpg" alt="">
+</figure> 
+
+<b>Hi, I'm Nils.</b> <br> I'm a PhD student in Earth System Sciences in the <a href="https://www.ieu.uzh.ch/en/research/ecology/spatial.html">Spatial Ecology and Remote Sensing Group</a> at the University of Zurich studying the effect of heatwaves, droughts, and wildfires on Arctic tundra ecosystems. 
+
+<style>
+  .bottom-three {
+     margin-bottom: 3cm;
+  }
+</style>
 
 {% include feature_row id="feature_row" type="left" %}
