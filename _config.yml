@@ -34,7 +34,7 @@ author:
       # url: "mailto:your.name@email.com"
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
-      url: "https://linkedin.com/in/nils-rietze-511303302"
+      url: "https://linkedin.com/in/nils-rietze"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/nrietze"
@@ -237,6 +237,14 @@ pagination:
     before: 2
     after: 2
 
+collections:
+  maps:
+    output: true
+    permalink: /:collection/:path/
+  research:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Plugins (previously gems:)
 plugins:
@@ -305,3 +313,20 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _maps
+  - scope:
+      path: ""
+      type: maps
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  # _research
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: single
+      author_profile: false
+      share: true
+

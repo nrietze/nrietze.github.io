@@ -12,7 +12,14 @@ feature_row:
     alt: "Satellite image of Sand dunes in Argentina"
     title: "How I navigated the forking jungle to set up this website!"
     excerpt: 'This is a post about how I initialized this website.'
-    url: /_posts/2024-09-04-How-I-set-up-this-website.md
+    url: "/How-I-set-up-this-website"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/posts/dummy_post_img.jpg
+    alt: "The Bernina mountain range"
+    title: "Skiing every month of the year"
+    excerpt: 'Why I set out to ski natural snow throughout the year.'
+    url: "/Skiing-every-month-of-the-year"
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
