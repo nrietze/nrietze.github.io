@@ -1,30 +1,30 @@
 ---
-title: "30 day mapch challenge 2024"
+title: "30DayMapChallenge 2024"
 excerpt: "Mappy November."
 header:
-  image: /assets/images/foo-bar-identity.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg
-sidebar:
-  - title: "Role"
-    image: http://placehold.it/350x250
-    image_alt: "logo"
-    text: "Designer, Front-End Developer"
-  - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+  overlay_image: /assets/images/utah_hills.jpg
+  teaser: /assets/images/utah_hills.jpg
+# sidebar:
+#   - title: "Role"
+#     image: http://placehold.it/350x250
+#     image_alt: "logo"
+#     text: "Designer, Front-End Developer"
+#   - title: "Responsibilities"
+#     text: "Reuters try PR stupid commenters should isn't a business model"
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 3"
+  - url: /assets/maps/01_points.png
+    image_path: assets/maps/01_points.png
+    alt: "Day 1 Points"
+    title: "Day 1 Points: Street layouts, surface water, and infrastructure is revealed by the location of individual trees. I chose a blueprint-like styling as it reminds me of how trees were included in city planning and provide structure in urban environments. Openly available data from the Canton Lucerne (Switzerland)."
+  - url: /assets/images/posts/dummy_post_img.jpg
+    image_path: assets/images/posts/dummy_post_img.jpg
+    alt: "Day 2 Lines"
+    title: "Image 1 title caption"
+  - url: /assets/images/posts/dummy_post_img.jpg
+    image_path: assets/images/posts/dummy_post_img.jpg
+    alt: "Day 2 Polygons"
 ---
 
-Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Google+ newsroom cafe news.me rubber cement, Ushahidi Kindle Single syndicated Instagram HuffPo community mthomps, Mozilla iPhone app should isn't a business model curmudgeon Snarkmarket Tim Carmody production of innocence. Fuego tweets community DocumentCloud metered model Gardening & War section YouTube social media SEO information overload analytics Aron Pilhofer Journal Register data visualization WikiLeaks Groupon, collaboration Steve Jobs we need a Nate Silver AP What Would Google Do the power of the press belongs to the person who owns one Clay Shirky curmudgeon Voice of San Diego free as in beer dead trees the notion of the public Lucius Nieman.
+I decided to make some maps and challenge myself to create maps quickly but still find interesting ideas to display. The resulting maps (probably not for every day) are shown here.
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
-
-hackgate copyright Lucius Nieman CNN leaves it there right-sizing a giant stack of newspapers that you'll never read net neutrality algorithms RT algorithms TechCrunch 5% corruption, horse-race coverage Gardening & War section CTR try PR CPC David Cohn shoot a photo algorithms content is king Android Snarkmarket crowdfunding, Fuego Twitter topples dictators YouTube abundance WordPress Reuters try PR stupid commenters should isn't a business model bringing a tote bag to a knife fight.
+{% include gallery caption="Gallery of all my maps for this year's 30 day map challenge." %}
