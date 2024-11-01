@@ -16,10 +16,10 @@ gallery:
     image_path: assets/maps/01_points.png
     alt: "Day 1 Points"
     title: "Day 1 Points: Street layouts, surface water, and infrastructure is revealed by the location of individual trees. I chose a blueprint-like styling as it reminds me of how trees were included in city planning and provide structure in urban environments. Openly available data from the Canton Lucerne (Switzerland)."
-  - url: /assets/images/posts/dummy_post_img.jpg
-    image_path: assets/images/posts/dummy_post_img.jpg
+  - url: /assets/images/maps/02_lines.png
+    image_path: assets/images/maps/02_lines.png
     alt: "Day 2 Lines"
-    title: "Image 1 title caption"
+    title: "I made this map a year ago in an attempt to map a geographic in a simplistic way. The colors correspond to the official color coding of tram lines in Zurich."
   - url: /assets/images/posts/dummy_post_img.jpg
     image_path: assets/images/posts/dummy_post_img.jpg
     alt: "Day 2 Polygons"

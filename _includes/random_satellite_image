@@ -1,0 +1,79 @@
+{% if include.id %}
+  {% assign random_satellite_image = page[include.id] %}
+{% else %}
+  {% assign random_satellite_image = page.random_satellite_image %}
+{% endif %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random VIIRS Satellite Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>VIIRS Satellite Image</h1>
+<div class="image-container">
+  <div>
+      <h2>RGB Image</h2>
+      <img id="rgbImage" alt="RGB Satellite Image">
+  </div>
+  <div>
+      <h2>Brightness Temperature</h2>
+      <img id="brightnessImage" alt="Brightness Temperature Image">
+  </div>
+</div>
+
+
+  <script>
+    // Function to format the date for the API request
+    function getOneDayAgo() {
+        const date = new Date();
+        date.setDate(date.getDate() - 1); // Set to yesterday
+        return date.toISOString().split('T')[0]; // Format: YYYY-MM-DD
+    }
+
+    // Function to generate random tile coordinates
+    function getRandomTileCoordinates() {
+      const x = Math.floor(Math.random() * 20); // Randomize x (e.g., 0-19)
+      const y = Math.floor(Math.random() * 20); // Randomize y (e.g., 0-19)
+      return { x, y };
+    }
+    // Main function to display the image
+    function displayRandomImages() {
+        // const date = "2024-10-30"; // Use the date you want to test
+        const date = getOneDayAgo(); // Use the date you want to test
+        // const x = 13; // row id
+        // const y = 36; // col id
+        const { x, y } = getRandomTileCoordinates(); // Get random coordinates
+
+        // const imageUrl = `https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/VIIRS_SNPP_CorrectedReflectance_TrueColor/default/${date}/250m/6/${x}/${y}.jpg`;
+
+        // URLs for the images
+        const rgbImageUrl = `https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/VIIRS_SNPP_CorrectedReflectance_TrueColor/default/${date}/250m/6/${x}/${y}.jpg`;
+        const brightnessImageUrl = `https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/VIIRS_SNPP_Brightness_Temp_BandI5_Day/default/${date}/250m/6/${x}/${y}.png`;
+
+        // Set the image sources
+        document.getElementById('rgbImage').src = rgbImageUrl;
+        document.getElementById('brightnessImage').src = brightnessImageUrl;
+    }
+
+    // Load the random image on page load
+    window.onload = displayRandomImages;
+</script>
