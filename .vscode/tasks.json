@@ -1,0 +1,94 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Git Deploy Merge",
+        "type": "shell",
+        "command": "git",
+        "args": [
+          "checkout", "deploy"
+        ],
+        "problemMatcher": [],
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        },
+        "runOptions": {
+          "runOn": "folderOpen"
+        }
+      },
+      {
+        "label": "Git Merge Dev-Site",
+        "type": "shell",
+        "command": "git",
+        "args": [
+          "merge", "dev-site"
+        ],
+        "problemMatcher": [],
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        },
+        "runOptions": {
+          "runOn": "folderOpen"
+        }
+      },
+      {
+        "label": "Git Push Deploy",
+        "type": "shell",
+        "command": "git",
+        "args": [
+          "push", "origin", "deploy"
+        ],
+        "problemMatcher": [],
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        },
+        "runOptions": {
+          "runOn": "folderOpen"
+        }
+      },
+      {
+        "label": "Git Checkout Dev-Site",
+        "type": "shell",
+        "command": "git",
+        "args": [
+          "checkout", "dev-site"
+        ],
+        "problemMatcher": [],
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        },
+        "runOptions": {
+          "runOn": "folderOpen"
+        }
+      },
+      {
+        "label": "Git Deploy to Website",
+        "type": "shell",
+        "command": "echo Running Git Commands...",
+        "dependsOn": [
+          "Git Deploy Merge",
+          "Git Merge Dev-Site",
+          "Git Push Deploy",
+          "Git Checkout Dev-Site"
+        ],
+        "problemMatcher": [],
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        },
+        "runOptions": {
+          "runOn": "folderOpen"
+        }
+      }
+    ]
+  }
+  

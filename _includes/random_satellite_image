@@ -29,6 +29,7 @@
 <body>
 
 <h1>VIIRS Satellite Image</h1>
+<p class="subtitle">These are just two random satellite images from VIIRS, taken yesterday. If you don't see anything, try to refresh the page (Ctrl + R) for a new pair of images.</p>
 <div class="image-container">
   <div>
       <h2>RGB Image</h2>
