@@ -34,7 +34,7 @@ author:
       # url: "mailto:your.name@email.com"
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
-      url: "https://linkedin.com/in/nils-rietze"
+      url: "https://linkedin.com/in/nrietze"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/nrietze"
@@ -129,7 +129,7 @@ footer:
   links:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: https://linkedin.com/in/nils-rietze-511303302
+      url: https://linkedin.com/in/nrietze
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url:

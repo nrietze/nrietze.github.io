@@ -43,9 +43,9 @@
 
   <script>
     // Function to format the date for the API request
-    function getOneDayAgo() {
+    function getNDayAgo() {
         const date = new Date();
-        date.setDate(date.getDate() - 1); // Set to yesterday
+        date.setDate(date.getDate() - 2); // Set to 2 days ago
         return date.toISOString().split('T')[0]; // Format: YYYY-MM-DD
     }
 
@@ -58,7 +58,7 @@
     // Main function to display the image
     function displayRandomImages() {
         // const date = "2024-10-30"; // Use the date you want to test
-        const date = getOneDayAgo(); // Use the date you want to test
+        const date = getNDayAgo(); // Use the date you want to test
         // const x = 13; // row id
         // const y = 36; // col id
         const { x, y } = getRandomTileCoordinates(); // Get random coordinates
